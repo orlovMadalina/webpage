@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student for a day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside>
+        <h1>Student for a day</h1>
+        <h3>Discover our university</h3>
+        <img src="image1.jpg" alt="Our university">
+    </aside>
+
+    <main>
+        <form action="about:blank">
+            <fieldset>
+                <h2>Personal Details</h2>
+                <p>All fields are required.</p>
+
+                <label for="fname">First name:</label>
+                <input type="text"
+                       id="fname"
+                       name="fname"
+                       placeholder="Your first name"
+                       aria-describedby="fname-error"
+                       required>
+                <small class="error" id="fname-error">
+                    Please enter your first name.
+                </small>
+                <br>
+
+                <label for="lname">Last name:</label>
+                <input type="text"
+                       id="lname"
+                       name="lname"
+                       placeholder="Your last name"
+                       aria-describedby="lname-error"
+                       required>
+                <small class="error" id="lname-error">
+                    Please enter your last name.
+                </small>
+                <br>
+
+                <label for="dob">Date of birth:</label>
+                <input type="date"
+                       id="dob"
+                       name="dob"
+                       aria-describedby="dob-error"
+                       required>
+                <small class="error" id="dob-error">
+                    Please enter a complete date of birth.
+                </small>
+                <br>
+
+                <label for="tel">Mobile number:</label>
+                <small class="hint" id="tel-hint">
+                    Use + and 8–15 digits without spaces.
+                    Example: +4512345678.
+                </small>
+                <input type="tel"
+                       id="tel"
+                       name="tel"
+                       placeholder="Include country code"
+                       pattern="\+[0-9]{8,15}"
+                       aria-describedby="tel-hint tel-error"
+                       required>
+                <small class="error" id="tel-error">
+                    Please enter + followed by 8–15 digits without spaces.
+                </small>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="you@example.com"
+                       aria-describedby="email-error"
+                       required>
+                <small class="error" id="email-error">
+                    Please enter a valid email address, such as you@example.com.
+                </small>
+                <br>
+
+                <fieldset class="education">
+                    <legend>
+                        Are you enrolled in any kind of education?
+                    </legend>
+
+                    <input type="radio"
+                           id="yes"
+                           name="study"
+                           value="yes"
+                           required>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio"
+                           id="no"
+                           name="study"
+                           value="no"
+                           required>
+                    <label for="no">No</label>
+                </fieldset>
+
+                <p class="hint">
+                    Practice form: use fictional details.
+                    Your registration will not be saved.
+                </p>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

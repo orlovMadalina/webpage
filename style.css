@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0fa;
+    color: #39334a;
+    margin: 0;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+aside {
+    background-color: #e7def8;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #59358c;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #756389;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+main {
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+fieldset > label {
+    display: block;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+}
+
+h2 {
+    color: #59358c;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    background-color: #faf8fd;
+    color: #39334a;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d8cfe5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #8054b3;
+    outline-offset: 2px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    accent-color: #7045a0;
+}
+
+input[type="radio"] + label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    background-color: #7045a0;
+    color: white;
+    border: none;
+    padding: 14px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #59358c;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    aside,
+    main {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+.hint {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.error {
+    display: none;
+    color: #a12035;
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+input:user-invalid {
+    border: 2px solid #a12035;
+}
+
+input:user-invalid + .error {
+    display: block;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.education {
+    margin-bottom: 15px;
+}
